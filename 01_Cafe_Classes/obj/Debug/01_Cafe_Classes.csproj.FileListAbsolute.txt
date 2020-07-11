@@ -1,0 +1,6 @@
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\01_Cafe_Classes\bin\Debug\01_Cafe_Classes.dll
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\01_Cafe_Classes\bin\Debug\01_Cafe_Classes.pdb
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\01_Cafe_Classes\obj\Debug\01_Cafe_Classes.csprojAssemblyReference.cache
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\01_Cafe_Classes\obj\Debug\01_Cafe_Classes.csproj.CoreCompileInputs.cache
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\01_Cafe_Classes\obj\Debug\01_Cafe_Classes.dll
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\01_Cafe_Classes\obj\Debug\01_Cafe_Classes.pdb
