@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{70319D67-13ED-4F9D-A54C-00DAD9557805}</ProjectGuid>
+    <ProjectGuid>{ECDAC255-C2AE-411B-9E16-3127AFC23A17}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_01_Cafe_Unit_Test</RootNamespace>
-    <AssemblyName>01_Cafe_Unit_Test</AssemblyName>
+    <RootNamespace>_02_Claims_Unit_Test</RootNamespace>
+    <AssemblyName>02_Claims_Unit_Test</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,16 +49,16 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cafe_UnitTest.cs" />
+    <Compile Include="Claim_UnitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\01_Cafe_Classes\01_Cafe_Classes.csproj">
-      <Project>{983B3B52-D840-48A9-A75F-7E3E64E96AA9}</Project>
-      <Name>01_Cafe_Classes</Name>
+    <ProjectReference Include="..\02_Claims_Classes\02_Claims_Classes.csproj">
+      <Project>{12A11951-5D78-4DC2-8EE2-A7BF819E78A5}</Project>
+      <Name>02_Claims_Classes</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

@@ -7,7 +7,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace _01_Cafe_Unit_Test
 {
     [TestClass]
-    public class UnitTest1
+    public class Cafe_UnitTest
     {
         [TestMethod]
         public void AddItemsTest()
@@ -57,7 +57,5 @@ namespace _01_Cafe_Unit_Test
             //ASSERT
             Assert.IsFalse(doesHaveItem);
         }
-
-        
     }
 }

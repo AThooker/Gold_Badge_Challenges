@@ -1,0 +1,6 @@
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\02_Claims_Classes\bin\Debug\02_Claims_Classes.dll
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\02_Claims_Classes\bin\Debug\02_Claims_Classes.pdb
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\02_Claims_Classes\obj\Debug\02_Claims_Classes.csprojAssemblyReference.cache
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\02_Claims_Classes\obj\Debug\02_Claims_Classes.csproj.CoreCompileInputs.cache
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\02_Claims_Classes\obj\Debug\02_Claims_Classes.dll
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\02_Claims_Classes\obj\Debug\02_Claims_Classes.pdb
