@@ -16,7 +16,7 @@ namespace _02_Claims_Unit_Test
             Claim_Repo repo = new Claim_Repo();
             repo.AddClaim(newOne);
             //ACT
-            List<Claim> newList = repo.GetListOfClaims();
+            Queue<Claim> newList = repo.GetListOfClaims();
             bool hasClaim = newList.Contains(newOne);
             //ASSERT
             Assert.IsTrue(hasClaim);
@@ -34,18 +34,6 @@ namespace _02_Claims_Unit_Test
 
             //ASSERT
             Assert.IsTrue(addClaim);
-        }
-
-        private readonly Claim search;
-        [TestMethod]
-        public void GetClaimByID_Test()
-        {
-            //ARRANGE
-            Claim_Repo repo = new Claim_Repo();
-            //ACT
-            Claim newClaim = repo.GetClaimByID(1);
-            //ASSERT
-            Assert.AreEqual(search, newClaim);
         }
     }
 }

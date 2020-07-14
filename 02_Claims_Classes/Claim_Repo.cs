@@ -8,28 +8,15 @@ namespace _02_Claims_Classes
 {
     public class Claim_Repo
     {
-        List<Claim> _listOfClaims = new List<Claim>();
-
-        public List<Claim> GetListOfClaims()
+        Queue<Claim> _listOfClaims = new Queue<Claim>();
+        public Queue<Claim> GetListOfClaims()
         {
             return _listOfClaims;
-        }
-
-        public Claim GetClaimByID(int id)
-        {
-            foreach(Claim file in _listOfClaims)
-            {
-                if(file.ID == id)
-                {
-                    return file;
-                }
-            }
-            return null;
         }
         public bool AddClaim(Claim steal)
         {
             int startingCount = _listOfClaims.Count();
-            _listOfClaims.Add(steal);
+            _listOfClaims.Enqueue(steal);
             bool wasAdded = (_listOfClaims.Count > startingCount) ? true : false;
             return wasAdded;
         }

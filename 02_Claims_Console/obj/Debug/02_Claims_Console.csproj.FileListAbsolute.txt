@@ -1,0 +1,10 @@
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\02_Claims_Console\bin\Debug\02_Claims_Console.exe.config
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\02_Claims_Console\bin\Debug\02_Claims_Console.exe
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\02_Claims_Console\bin\Debug\02_Claims_Console.pdb
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\02_Claims_Console\bin\Debug\02_Claims_Classes.dll
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\02_Claims_Console\bin\Debug\02_Claims_Classes.pdb
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\02_Claims_Console\obj\Debug\02_Claims_Console.csprojAssemblyReference.cache
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\02_Claims_Console\obj\Debug\02_Claims_Console.csproj.CoreCompileInputs.cache
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\02_Claims_Console\obj\Debug\02_Claims_Console.csproj.CopyComplete
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\02_Claims_Console\obj\Debug\02_Claims_Console.exe
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\02_Claims_Console\obj\Debug\02_Claims_Console.pdb

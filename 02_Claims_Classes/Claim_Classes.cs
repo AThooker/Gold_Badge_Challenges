@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace _02_Claims_Classes
 {
-    //refer to 06 Class Examples
     public enum ClaimType
     {
-        Car,
+        Car =1,
         Home,
         Theft
     }
@@ -25,8 +24,8 @@ namespace _02_Claims_Classes
         {
             get
             {
-                TimeSpan span = DateOfClaim -DateOfIncident;
-                if(span.TotalDays <= 30)
+                TimeSpan span = DateOfClaim - DateOfIncident;
+                if(span.TotalDays <= 30 && span.TotalDays >= 0)
                 {
                     return true;
                 }
@@ -36,8 +35,15 @@ namespace _02_Claims_Classes
                 }
             }
         }
-        
-
-
+        public Claim(){}
+        public Claim(int id, ClaimType typeOfClaim, string description, double amount, DateTime dateOfIncident, DateTime dateOFClaim) 
+        {
+            ID = id;
+            TypeOfClaim = typeOfClaim;
+            Description = description;
+            Amount = amount;
+            DateOfIncident = dateOfIncident;
+            DateOfClaim = dateOFClaim;
+        }
     }
 }
