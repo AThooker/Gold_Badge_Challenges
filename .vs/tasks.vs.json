@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-03_Badges_UnitTest",
+      "appliesTo": "03_Badges_UnitTest/",
+      "type": "launch"
+    }
+  ]
+}

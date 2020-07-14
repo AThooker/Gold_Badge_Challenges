@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4C6FE373-8DCC-42D7-83BF-EC79CB934242}</ProjectGuid>
+    <ProjectGuid>{785013A4-397B-410F-A1CA-6D9206FFCFC1}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_02_Claims_Console</RootNamespace>
     <AssemblyName>02_Claims_Console</AssemblyName>
@@ -44,7 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
-    <Compile Include="ProgramUI.cs" />
+    <Compile Include="Claims_ProgramUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -52,7 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\02_Claims_Classes\02_Claims_Classes.csproj">
-      <Project>{12A11951-5D78-4DC2-8EE2-A7BF819E78A5}</Project>
+      <Project>{12a11951-5d78-4dc2-8ee2-a7bf819e78a5}</Project>
       <Name>02_Claims_Classes</Name>
     </ProjectReference>
   </ItemGroup>
