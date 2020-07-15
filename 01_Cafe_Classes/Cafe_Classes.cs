@@ -13,9 +13,7 @@ namespace _01_Cafe_Classes
         public string Description { get; set; }
         public string Ingredients { get; set; }
         public double Price { get; set; }
-
         public MenuItem() { }
-
         public MenuItem(int mealNumber, string mealName, string description, string ingredients, double price)
         {
             MealNumber = mealNumber;

@@ -167,7 +167,7 @@ namespace _03_Badge_Console_Again
         private void DeleteDoors()
         {
             Console.Clear();
-            Console.WriteLine("What is the number of the badge from which you'd like to remove all access?: ");
+            Console.Write("What is the number of the badge from which you'd like to remove all access?: ");
             string answer = Console.ReadLine();
             int badgeId = Convert.ToInt32(answer);
             _repo.DeleteDoorValues(badgeId);

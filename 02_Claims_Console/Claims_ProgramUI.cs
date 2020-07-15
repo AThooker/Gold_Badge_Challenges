@@ -86,6 +86,9 @@ namespace _02_Claims_Console
                 Console.ReadKey();
             }
             else
+                Console.WriteLine("This claim is not valid\n" +
+                    "\n" +
+                    "Press any key to continue");
                 Console.ReadKey();
             _repo.AddClaim(addClaim);
         }

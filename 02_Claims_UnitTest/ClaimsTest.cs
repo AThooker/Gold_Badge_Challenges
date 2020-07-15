@@ -28,10 +28,8 @@ namespace _02_Claims_UnitTest
             //ARRANGE
             Claim newOne = new Claim();
             Claim_Repo repo = new Claim_Repo();
-
             //ACT
             bool addClaim = repo.AddClaim(newOne);
-
             //ASSERT
             Assert.IsTrue(addClaim);
         }

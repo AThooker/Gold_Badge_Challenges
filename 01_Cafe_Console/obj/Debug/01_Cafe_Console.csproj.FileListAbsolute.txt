@@ -1,0 +1,10 @@
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\01_Cafe_Console\bin\Debug\01_Cafe_Console.exe.config
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\01_Cafe_Console\bin\Debug\01_Cafe_Console.exe
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\01_Cafe_Console\bin\Debug\01_Cafe_Console.pdb
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\01_Cafe_Console\bin\Debug\01_Cafe_Classes.dll
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\01_Cafe_Console\bin\Debug\01_Cafe_Classes.pdb
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\01_Cafe_Console\obj\Debug\01_Cafe_Console.csprojAssemblyReference.cache
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\01_Cafe_Console\obj\Debug\01_Cafe_Console.csproj.CoreCompileInputs.cache
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\01_Cafe_Console\obj\Debug\01_Cafe_Console.csproj.CopyComplete
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\01_Cafe_Console\obj\Debug\01_Cafe_Console.exe
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\01_Cafe_Console\obj\Debug\01_Cafe_Console.pdb

@@ -31,7 +31,6 @@ namespace _01_Cafe_Console
                     "");
                 Console.Write("Type your number here, press enter, and I will get you where you need to be: ");
                 string userInput = Console.ReadLine();
-
                 switch (userInput)
                 {
                     case "1":
@@ -58,8 +57,6 @@ namespace _01_Cafe_Console
                 }
             }
         }
-
-
         private void ExistingItems()
         {
             Console.Clear();
@@ -70,7 +67,6 @@ namespace _01_Cafe_Console
             _repo.AddMenuItem(nachos);
             _repo.AddMenuItem(corndog);
         }
-
         void AddItem()
         {
             Console.Clear();

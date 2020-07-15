@@ -1,0 +1,10 @@
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\03_Badge_Console_Again\bin\Debug\03_Badge_Console_Again.exe.config
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\03_Badge_Console_Again\bin\Debug\03_Badge_Console_Again.exe
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\03_Badge_Console_Again\bin\Debug\03_Badge_Console_Again.pdb
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\03_Badge_Console_Again\bin\Debug\03_Badge_Classes.dll
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\03_Badge_Console_Again\bin\Debug\03_Badge_Classes.pdb
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\03_Badge_Console_Again\obj\Debug\03_Badge_Console.csprojAssemblyReference.cache
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\03_Badge_Console_Again\obj\Debug\03_Badge_Console.csproj.CoreCompileInputs.cache
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\03_Badge_Console_Again\obj\Debug\03_Badge_Console.csproj.CopyComplete
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\03_Badge_Console_Again\obj\Debug\03_Badge_Console_Again.exe
+C:\Users\Olivia Lee\source\repos\Gold_Badge_Challenges\03_Badge_Console_Again\obj\Debug\03_Badge_Console_Again.pdb
