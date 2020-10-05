@@ -23,5 +23,4 @@ namespace _01_Cafe_Classes
             Price = price;
         }
     }
-
 }

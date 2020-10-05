@@ -1,0 +1,6 @@
+C:\Users\Olivia Lee\Desktop\Gold Badge\Gold_Badge_Challenges\04_CompanyClasses\bin\Debug\04_CompanyClasses.dll
+C:\Users\Olivia Lee\Desktop\Gold Badge\Gold_Badge_Challenges\04_CompanyClasses\bin\Debug\04_CompanyClasses.pdb
+C:\Users\Olivia Lee\Desktop\Gold Badge\Gold_Badge_Challenges\04_CompanyClasses\obj\Debug\04_Outing_Classes.csprojAssemblyReference.cache
+C:\Users\Olivia Lee\Desktop\Gold Badge\Gold_Badge_Challenges\04_CompanyClasses\obj\Debug\04_Outing_Classes.csproj.CoreCompileInputs.cache
+C:\Users\Olivia Lee\Desktop\Gold Badge\Gold_Badge_Challenges\04_CompanyClasses\obj\Debug\04_CompanyClasses.dll
+C:\Users\Olivia Lee\Desktop\Gold Badge\Gold_Badge_Challenges\04_CompanyClasses\obj\Debug\04_CompanyClasses.pdb
