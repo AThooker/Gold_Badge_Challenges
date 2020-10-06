@@ -12,8 +12,8 @@ namespace _04_Company_Console
         OutingRepo _repo = new OutingRepo();
         public void Run()
         {
-            Console.BackgroundColor = ConsoleColor.Green;
-            Console.ForegroundColor = ConsoleColor.Black;
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.Clear();
             SeedContent();
             RunMenu();
@@ -42,11 +42,19 @@ namespace _04_Company_Console
                         //Get List of Outings
                         GetListOutings();
                         break;
-                //    case 2:
-                //        //Add Outing to list
-                //        AddToOutings();
-                //        break;
-                //
+                    case 2:
+                        //Add Outing to list
+                        AddToOutings();
+                        break;
+                    case 3:
+                        //Cost of All Outings
+                        CostOfAllOutings();
+                        break;
+                    case 4:
+                        //Cost by type
+                        CostByType();
+                        break;
+
                 }
             }
         }
@@ -62,6 +70,68 @@ namespace _04_Company_Console
             }
             Console.WriteLine("Press any key to continue");
             Console.ReadKey();
+        }
+        private void AddToOutings()
+        {
+            Outing oneEvent = new Outing();
+            List<Outing> outings = new List<Outing>();
+            Console.Clear();
+            Console.Write("Is the event a Golf, Bowling, AmusementPark, or Concert event?:\n ");
+            string type = Console.ReadLine();
+            int enumID = Convert.ToInt32(type);
+            oneEvent.EventType = (EventType)enumID;
+            Console.Write("How many people will be attending?:\n" );
+            string att = Console.ReadLine();
+            int attendance = Convert.ToInt32(att);
+            oneEvent.Attendance = attendance;
+            Console.Write("What is the date of the event? (ex. dd/mm/yyyy): \n");
+            string date = Console.ReadLine();
+            DateTime dateTime = Convert.ToDateTime(date);
+            oneEvent.DateOfEvent = dateTime;
+            Console.Write("What is the cost per person?: \n");
+            string costPerson = Console.ReadLine();
+            double costPerPerson = Convert.ToDouble(costPerson);
+            oneEvent.CostPerPerson = costPerPerson;
+            Console.Write("What is the total cost of the event?: \n");
+            string cost = Console.ReadLine();
+            double costEvent = Convert.ToDouble(cost);
+            oneEvent.CostForEvent = costEvent;
+            _repo.AddToList(oneEvent);
+            Console.WriteLine("Press any key to continue");
+            Console.ReadKey();
+
+        }
+        private void CostOfAllOutings()
+        {
+            List<Outing> outings = _repo.GetListOfOutings();
+            double total = outings.Sum(p => p.CostForEvent);
+            Console.WriteLine($"The total cost of events is: {total} ");
+            Console.ReadKey();
+            Console.WriteLine("Press any key to continue");
+        }
+        private void CostByType()
+        {
+            List<Outing> outing = _repo.GetListOfOutings();
+            foreach(var gather in outing)
+            {
+                if(gather.EventType == EventType.Golf)
+                {
+                    double GolfTotal = outing.Sum(p => p.CostForEvent);
+                }
+                if(gather.EventType == EventType.Bowling)
+                {
+                    double BowlingTotal = outing.Sum(p => p.CostForEvent);
+                }
+                if(gather.EventType == EventType.AmusementPark)
+                {
+                    double Parktotal = outing.Sum(p => p.CostForEvent);
+                }
+                if(gather.EventType == EventType.Concert)
+                {
+                    double ConcertTotal = outing.Sum(p => p.CostForEvent);
+                }
+            }
+            
         }
         private void DisplayOutings(Outing outing)
         {
