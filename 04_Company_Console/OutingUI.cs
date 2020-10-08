@@ -63,7 +63,6 @@ namespace _04_Company_Console
                         Console.Clear();
                         Console.WriteLine("Try again buddy");
                         break;
-
                 }
             }
         }
@@ -108,7 +107,6 @@ namespace _04_Company_Console
             _repo.AddToList(oneEvent);
             Console.WriteLine("Press any key to continue");
             Console.ReadKey();
-
         }
         private void CostOfAllOutings()
         {
@@ -138,14 +136,11 @@ namespace _04_Company_Console
 
             Console.WriteLine("Press any key to continue");
             Console.ReadKey();
-
         }
         private void DisplayOutings(Outing outing)
         {
             string values = String.Format("{0,-10}\t{1, 4}\t{2,15} {3,10} {4,15}", outing.EventType, outing.Attendance, outing.DateOfEvent.ToString("dd/MM/yyyy"), outing.CostPerPerson, outing.CostForEvent);
             Console.WriteLine(values);
-
-            //Console.WriteLine($"{outing.EventType}\t\t{outing.Attendance}\t{outing.DateOfEvent.Date}\t\t{outing.CostPerPerson}\t\t{outing.CostForEvent}");
         }
         private void SeedContent()
         {
