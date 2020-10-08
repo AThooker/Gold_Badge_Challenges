@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _04_CompanyClasses
 {
-    public enum EventType { Golf, Bowling, AmusementPark, Concert };
+    public enum EventType { Golf, Bowling=1, AmusementPark, Concert };
     public class Outing
     {
         public EventType EventType { get; set; }

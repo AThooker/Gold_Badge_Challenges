@@ -23,6 +23,7 @@ namespace _04_Company_Console
             bool continueRun = true;
             while (continueRun)
             {
+                Console.Clear();
                 Console.WriteLine("Hi mr/mrs accountant, what can I do for you today?\n" +
                     "\n" +
                     "1. See full list of outings\n" +
@@ -32,7 +33,8 @@ namespace _04_Company_Console
                     "3. See total cost of outings.\n" +
                     "\n" +
                     "4. See total cost of outings by type.\n" +
-                    "");
+                    "\n" +
+                    "5. Exit");
 
                 string resp = Console.ReadLine();
                 int numResp = Convert.ToInt32(resp);
@@ -53,6 +55,13 @@ namespace _04_Company_Console
                     case 4:
                         //Cost by type
                         CostByType();
+                        break;
+                    case 5:
+                        continueRun = false;
+                        break;
+                    default:
+                        Console.Clear();
+                        Console.WriteLine("Try again buddy");
                         break;
 
                 }
@@ -80,7 +89,7 @@ namespace _04_Company_Console
             string type = Console.ReadLine();
             int enumID = Convert.ToInt32(type);
             oneEvent.EventType = (EventType)enumID;
-            Console.Write("How many people will be attending?:\n" );
+            Console.Write("How many people will be attending?:\n");
             string att = Console.ReadLine();
             int attendance = Convert.ToInt32(att);
             oneEvent.Attendance = attendance;
@@ -103,35 +112,33 @@ namespace _04_Company_Console
         }
         private void CostOfAllOutings()
         {
+            Console.Clear();
             List<Outing> outings = _repo.GetListOfOutings();
             double total = outings.Sum(p => p.CostForEvent);
-            Console.WriteLine($"The total cost of events is: {total} ");
-            Console.ReadKey();
+            Console.WriteLine($"The total cost of events is: ${total} ");
             Console.WriteLine("Press any key to continue");
+            Console.ReadKey();
         }
         private void CostByType()
         {
-            List<Outing> outing = _repo.GetListOfOutings();
-            foreach(var gather in outing)
-            {
-                if(gather.EventType == EventType.Golf)
-                {
-                    double GolfTotal = outing.Sum(p => p.CostForEvent);
-                }
-                if(gather.EventType == EventType.Bowling)
-                {
-                    double BowlingTotal = outing.Sum(p => p.CostForEvent);
-                }
-                if(gather.EventType == EventType.AmusementPark)
-                {
-                    double Parktotal = outing.Sum(p => p.CostForEvent);
-                }
-                if(gather.EventType == EventType.Concert)
-                {
-                    double ConcertTotal = outing.Sum(p => p.CostForEvent);
-                }
-            }
-            
+            Console.Clear();
+            List<Outing> outings = _repo.GetListOfOutings();
+
+            double golfTotal = outings.Where(p => p.EventType == 0).Sum(p => p.CostForEvent);
+            Console.WriteLine($"The total cost of Golf events is: ${golfTotal}\n");
+
+            double bowlingTotal = outings.Where(p => p.EventType == (EventType)1).Sum(p => p.CostForEvent);
+            Console.WriteLine($"The total cost of Bowling events is: ${bowlingTotal}\n");
+
+            double parkTotal = outings.Where(p => p.EventType == (EventType)2).Sum(p => p.CostForEvent);
+            Console.WriteLine($"The total cost of Amusement Park events is: ${parkTotal}\n");
+
+            double concertTotal = outings.Where(p => p.EventType == (EventType)3).Sum(p => p.CostForEvent);
+            Console.WriteLine($"The total cost of Concert events is: ${concertTotal}\n");
+
+            Console.WriteLine("Press any key to continue");
+            Console.ReadKey();
+
         }
         private void DisplayOutings(Outing outing)
         {
