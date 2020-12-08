@@ -10,6 +10,8 @@ namespace _05_Greeting_Classes
     {
         static void Main(string[] args)
         {
+            ProgramUI ui = new ProgramUI();
+            ui.Run();
         }
     }
 }

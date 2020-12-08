@@ -16,11 +16,11 @@ namespace _05_Greeting_Class
                 bool added = (_custList.Count > count) ? true : false;
                 return added;
         }
-        public List<Customer> GetCustomers(int num)
+        public List<Customer> GetCustomers()
         {
             return _custList.ToList();
         }
-        public Customer UpdateCustomer(Customer customer)
+        public Customer UpdateCustomer(string firstName)
         {
 
         }
