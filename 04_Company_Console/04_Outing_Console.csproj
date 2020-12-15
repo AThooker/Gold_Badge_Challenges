@@ -55,6 +55,10 @@
       <Project>{77DE27C3-8F2C-489C-9F8B-CF59B8C4DB37}</Project>
       <Name>04_Outing_Classes</Name>
     </ProjectReference>
+    <ProjectReference Include="..\05_Greeting_Class\05_Greeting_Classes.csproj">
+      <Project>{83D939D4-0513-4A19-8C86-E5AF2ED17EF6}</Project>
+      <Name>05_Greeting_Classes</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
