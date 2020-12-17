@@ -20,7 +20,7 @@ namespace _05_Greeting_Classes
         public void RunMenu()
         {
             bool continueToRun = true;
-            while(continueToRun)
+            while (continueToRun)
             {
                 Console.Clear();
                 Console.WriteLine("Hi Mr/Mrs administrator, what can I do for you today?\n" +
@@ -34,14 +34,29 @@ namespace _05_Greeting_Classes
                     "4. Delete customer\n" +
                     "\n" +
                     "5. Exit");
-            }
-            string input = Console.ReadLine();
-            int num = Convert.ToInt32(input);
-            switch(num)
-            {
-                case 1:
-                    GetListOfCustomers();
-                    break;
+                string input = Console.ReadLine();
+                int num = Convert.ToInt32(input);
+                switch (num)
+                {
+                    case 1:
+                        GetListOfCustomers();
+                        break;
+                    case 2:
+                        AddCustomer();
+                        break;
+                    case 3:
+                        UpdateCustomer();
+                        break;
+                    case 4:
+                        DeleteCustomer();
+                        break;
+                    case 5:
+                        continueToRun = false;
+                        break;
+                    default:
+                        Console.WriteLine("Pick a number");
+                        break;
+                }
             }
         }
         public void GetListOfCustomers()
@@ -49,30 +64,57 @@ namespace _05_Greeting_Classes
             Console.Clear();
             Console.WriteLine($"{ "Firstname"}\t{"Lastname"}\t{"Customer Type"}\t{"Email"}");
             List<Customer> custList = _repo.GetCustomers();
-            foreach(var cust in custList)
+            foreach (var cust in custList)
             {
                 DisplayCust(cust);
                 Console.WriteLine("---------------------------------------------------------");
             }
         }
+        private void AddCustomer()
+        {
+            Console.Clear();
+            Customer customer = new Customer();
+            Console.WriteLine("What is the customer's first name?: \n");
+            customer.FirstName = Console.ReadLine();
+            Console.WriteLine("What is the customer's last name?: \n");
+            customer.LastName = Console.ReadLine();
+            Console.WriteLine("Are they a current, past, or potential customer?: \n");
+            string custType = Console.ReadLine();
+            int custEnum = int.Parse(custType);
+            customer.Type = (CustomerType)custEnum;
+            _repo.AddCustomer(customer);
+        }
+        private void UpdateCustomer()
+        {
+            Console.Clear();
+            GetListOfCustomers();
+            List<Customer> custList = _repo.GetCustomers();
+            Console.Write("\n Which customer would you like to update? (enter their first name): ");
+            string name = Console.ReadLine();
+           
+        }
+        private void DeleteCustomer()
+        {
+
+        }
         private void DisplayCust(Customer cust)
         {
-            if(cust.Type == CustomerType.Current)
+            if (cust.Type == CustomerType.Current)
             {
                 var email = "Thank you for your work with us. We appreciate your loyalty. Here's a coupon.";
-                string values = String.Format("{0,-10}\t{1, 4}\t{2,15} {3,10}", cust.FirstName, cust.LastName, cust.Type, email);
+                string values = String.Format("{0,-10}\t{1, 4}\t{2,15} {3,10}", cust.FirstName, cust.LastName, cust.Type.ToString(), email);
                 Console.WriteLine(values);
             }
-            else if(cust.Type == CustomerType.Past)
+            else if (cust.Type == CustomerType.Past)
             {
                 var email = "It's been a long time since we've heard from you, we want you back";
-                string values = String.Format("{0,-10}\t{1, 4}\t{2,15} {3,10}", cust.FirstName, cust.LastName, cust.Type, email);
+                string values = String.Format("{0,-10}\t{1, 4}\t{2,15} {3,10}", cust.FirstName, cust.LastName, cust.Type.ToString(), email);
                 Console.WriteLine(values);
             }
-            else if(cust.Type == CustomerType.Potential)
+            else if (cust.Type == CustomerType.Potential)
             {
                 var email = "We currently have the lowest rates on Helicopter Insurance!";
-                string values = String.Format("{0,-10}\t{1, 4}\t{2,15} {3,10}", cust.FirstName, cust.LastName, cust.Type, email);
+                string values = String.Format("{0,-10}\t{1, 4}\t{2,15} {3,10}", cust.FirstName, cust.LastName, cust.Type.ToString(), email);
                 Console.WriteLine(values);
             }
         }
