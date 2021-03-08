@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _05_Greeting_Class
 {
-    public enum CustomerType { Past, Current, Potential }
+    public enum CustomerType { Past, Current, Potential = 3 }
     public class Customer
     {
         public string FirstName { get; set; }

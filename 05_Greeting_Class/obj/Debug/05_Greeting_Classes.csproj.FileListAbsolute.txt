@@ -1,0 +1,6 @@
+C:\Users\Olivia Lee\Desktop\EFA-Student\Gold Badge\Gold_Badge_Challenges\05_Greeting_Class\bin\Debug\05_Greeting_Class.dll
+C:\Users\Olivia Lee\Desktop\EFA-Student\Gold Badge\Gold_Badge_Challenges\05_Greeting_Class\bin\Debug\05_Greeting_Class.pdb
+C:\Users\Olivia Lee\Desktop\EFA-Student\Gold Badge\Gold_Badge_Challenges\05_Greeting_Class\obj\Debug\05_Greeting_Classes.csprojAssemblyReference.cache
+C:\Users\Olivia Lee\Desktop\EFA-Student\Gold Badge\Gold_Badge_Challenges\05_Greeting_Class\obj\Debug\05_Greeting_Classes.csproj.CoreCompileInputs.cache
+C:\Users\Olivia Lee\Desktop\EFA-Student\Gold Badge\Gold_Badge_Challenges\05_Greeting_Class\obj\Debug\05_Greeting_Class.dll
+C:\Users\Olivia Lee\Desktop\EFA-Student\Gold Badge\Gold_Badge_Challenges\05_Greeting_Class\obj\Debug\05_Greeting_Class.pdb

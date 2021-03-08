@@ -9,7 +9,7 @@ namespace _05_Greeting_Class
     public class Greeting_Repo
     {
         private readonly List<Customer> _custList = new List<Customer>();
-        private readonly Customer _customer;
+        private Customer _customer;
         public bool AddCustomer(Customer customer)
         {
                 int count = _custList.Count();
@@ -32,7 +32,7 @@ namespace _05_Greeting_Class
         {
             foreach(var customer in _custList)
             {
-                if(firstName == customer.FirstName)
+                if(firstName.ToLower() == customer.FirstName.ToLower())
                 {
                     return customer;
                 }

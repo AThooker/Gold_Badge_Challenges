@@ -63,12 +63,14 @@ namespace _05_Greeting_Classes
         {
             Console.Clear();
             Console.WriteLine($"{ "Firstname"}\t{"Lastname"}\t{"Customer Type"}\t{"Email"}");
+            Console.WriteLine("---------------------------------------------------------------");
             List<Customer> custList = _repo.GetCustomers();
             foreach (var cust in custList)
             {
                 DisplayCust(cust);
                 Console.WriteLine("---------------------------------------------------------");
             }
+            Console.ReadKey();
         }
         private void AddCustomer()
         {
@@ -78,7 +80,7 @@ namespace _05_Greeting_Classes
             customer.FirstName = Console.ReadLine();
             Console.WriteLine("What is the customer's last name?: \n");
             customer.LastName = Console.ReadLine();
-            Console.WriteLine("Are they a current, past, or potential customer?: \n");
+            Console.WriteLine("Are they a 1. Current, 2. Past, or 3. Potential customer?: \n");
             string custType = Console.ReadLine();
             int custEnum = int.Parse(custType);
             customer.Type = (CustomerType)custEnum;
@@ -88,10 +90,22 @@ namespace _05_Greeting_Classes
         {
             Console.Clear();
             GetListOfCustomers();
-            List<Customer> custList = _repo.GetCustomers();
             Console.Write("\n Which customer would you like to update? (enter their first name): ");
-            string name = Console.ReadLine();
-           
+            string name = Console.ReadLine().ToLower();
+            Console.Clear();
+            Customer cust = _repo.GetCustomerByName(name);
+            Console.WriteLine($"{ "Firstname"}\t{"Lastname"}\t{"Customer Type"}\t");
+            Console.WriteLine("---------------------------------------------------------------");
+            string values = String.Format("{0,-10}\t{1, -10}\t{2,-15}", cust.FirstName, cust.LastName, cust.Type.ToString());
+            Console.WriteLine(values);
+            Console.WriteLine("Firstname: \n");
+            cust.FirstName = Console.ReadLine();
+            Console.WriteLine("Lastname: \n");
+            cust.LastName = Console.ReadLine();
+            Console.WriteLine("Type: ");
+            string custType = Console.ReadLine();
+            cust.Type = (CustomerType)Enum.Parse(typeof(CustomerType), custType);
+            Console.ReadKey();
         }
         private void DeleteCustomer()
         {
@@ -102,19 +116,19 @@ namespace _05_Greeting_Classes
             if (cust.Type == CustomerType.Current)
             {
                 var email = "Thank you for your work with us. We appreciate your loyalty. Here's a coupon.";
-                string values = String.Format("{0,-10}\t{1, 4}\t{2,15} {3,10}", cust.FirstName, cust.LastName, cust.Type.ToString(), email);
+                string values = String.Format("{0,-10}\t{1, -10}\t{2,-15} {3,10}", cust.FirstName, cust.LastName, cust.Type.ToString(), email);
                 Console.WriteLine(values);
             }
             else if (cust.Type == CustomerType.Past)
             {
                 var email = "It's been a long time since we've heard from you, we want you back";
-                string values = String.Format("{0,-10}\t{1, 4}\t{2,15} {3,10}", cust.FirstName, cust.LastName, cust.Type.ToString(), email);
+                string values = String.Format("{0,-10}\t{1, -10}\t{2,-15} {3,10}", cust.FirstName, cust.LastName, cust.Type.ToString(), email);
                 Console.WriteLine(values);
             }
             else if (cust.Type == CustomerType.Potential)
             {
                 var email = "We currently have the lowest rates on Helicopter Insurance!";
-                string values = String.Format("{0,-10}\t{1, 4}\t{2,15} {3,10}", cust.FirstName, cust.LastName, cust.Type.ToString(), email);
+                string values = String.Format("{0,-10}\t{1, -10}\t{2,-15} {3,10}", cust.FirstName, cust.LastName, cust.Type.ToString(), email);
                 Console.WriteLine(values);
             }
         }
